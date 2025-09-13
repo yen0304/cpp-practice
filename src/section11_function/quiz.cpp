@@ -117,7 +117,14 @@ int find_area(int side_length){
 }
 
 
+int sum_of_digits(int num) {
+  // Write your code below this line
+  if (num == 0)
+      return 0;
+  return (num % 10) + sum_of_digits(num / 10);
 
+  // Write your code above this line
+}
 
 int main() {
   //quiz 22
@@ -128,5 +135,7 @@ int main() {
   modify_grocery_list();
   //quiz 25
   area_calc();
+  //quiz 28
+  sum_of_digits(12345);
   return 0;
 }
